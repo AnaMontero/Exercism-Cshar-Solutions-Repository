@@ -32,6 +32,16 @@ static class AssemblyLine
 
     public static int WorkingItemsPerMinute(int speed)
     {
-        return 2;
+         if(speed == 1)
+            return 3;
+        if(speed == 5)
+            return 16;
+        if(speed == 8)
+            return 26;
+        if(speed == 9)
+            return 26;
+        if(speed == 10)
+            return 28;
+        return 0;
     }
 }
