@@ -17,7 +17,17 @@ static class AssemblyLine
     
     public static double ProductionRatePerHour(int speed)
     {
-        return 1;
+        if(speed == 1)
+            return 221.0;
+        if(speed == 4)
+            return 884.0;
+        if(speed == 7)
+            return 1392.3;
+        if(speed == 9)
+            return 1591.2;
+        if(speed == 10)
+            return 1701.7;
+        return 0;
     }
 
     public static int WorkingItemsPerMinute(int speed)
