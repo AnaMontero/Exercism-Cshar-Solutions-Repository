@@ -2,6 +2,15 @@ using System;
 
 class RemoteControlCar
 {
+    public decimal Distance { get; set; }
+    public decimal BatteryPercentage { get; set; }
+
+    public RemoteControlCar()
+    {
+        Distance = 0;
+        BatteryPercentage = 100;
+    }
+
     public static RemoteControlCar Buy()
     {
         var newCar = new RemoteControlCar();
@@ -10,16 +19,16 @@ class RemoteControlCar
 
     public string DistanceDisplay()
     {
-        return "Driven 0 meters";
+        return $"Driven {Distance} meters";
     }
 
     public string BatteryDisplay()
     {
-        return "Battery at 100%";
+        return $"Battery at {BatteryPercentage}%";
     }
 
     public void Drive()
     {
-        throw new NotImplementedException("Please implement the RemoteControlCar.Drive() method");
+
     }
 }
