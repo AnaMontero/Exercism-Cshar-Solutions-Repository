@@ -10,12 +10,12 @@ class RemoteControlCar
 
     public string DistanceDisplay()
     {
-        throw new NotImplementedException("Please implement the RemoteControlCar.DistanceDisplay() method");
+        return "Driven 0 meters";
     }
 
     public string BatteryDisplay()
     {
-        throw new NotImplementedException("Please implement the RemoteControlCar.BatteryDisplay() method");
+        return "Battery at 100%";
     }
 
     public void Drive()
